@@ -1,0 +1,24 @@
+Liberar Memoria
+----------------------
+sudo sync
+sudo sysctl -w vm.drop_caches=3
+
+Ver memoria disponible en tiempo real
+-------------------------------------
+watch -n 1 free -m
+
+freezer
+----------------------
+python -m pip freeze > requirements.txt
+
+Ejecutar app streamlit
+------------------------
+streamlit run searchApp.py
+
+Crear entorno
+------------------------
+python3 -m venv venv
+
+Activar entorno
+-----------------------
+source ./venv/bin/activate
